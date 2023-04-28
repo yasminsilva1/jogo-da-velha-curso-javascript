@@ -189,4 +189,17 @@ function checkWinCondition() {
             console.log("o venceu");
         }
     }
+
+    // deu velha (empate)
+    let counter = 0;
+
+    for(i = 0; i < boxes.length; i++) {
+        if(boxes[i].childNodes[0] != undefined) {
+            counter++;
+        }
+    }
+
+    if(counter == 9) {
+        console.log("deu velha");
+    }
 }
