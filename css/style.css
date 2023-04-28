@@ -102,7 +102,7 @@ h1 {
     border: 5px solid #20c098;
     border-radius: 50%;
     display: inline-block;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 /* Classe de esconder */
