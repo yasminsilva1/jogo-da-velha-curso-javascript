@@ -94,22 +94,6 @@ function checkWinCondition() {
         }
     }
 
-    // HORIZONTAL - possibilidade 2
-    if(b4.childNodes.length > 0 && b5.childNodes.length > 0 && b6.childNodes.length > 0) {
-
-        let b4Child = b4.childNodes[0].className;
-        let b5Child = b5.childNodes[0].className;
-        let b6Child = b6.childNodes[0].className;
-
-        if(b4Child == "x" && b5Child == "x" && b6Child == "x") {
-            // x venceu
-            console.log("x venceu");
-        } else if(b4Child == "o" && b5Child == "o" && b6Child == "o") {
-            // o venceu
-            console.log("o venceu");
-        }
-    }
-
     // HORIZONTAL - possibilidade 3
     if(b7.childNodes.length > 0 && b8.childNodes.length > 0 && b9.childNodes.length > 0) {
 
@@ -169,6 +153,38 @@ function checkWinCondition() {
             // x venceu
             console.log("x venceu");
         } else if(b3Child == "o" && b6Child == "o" && b9Child == "o") {
+            // o venceu
+            console.log("o venceu");
+        }
+    }
+
+    // DIAGONAL - possibilidade 1
+    if(b1.childNodes.length > 0 && b5.childNodes.length > 0 && b9.childNodes.length > 0) {
+
+        let b1Child = b1.childNodes[0].className;
+        let b5Child = b5.childNodes[0].className;
+        let b9Child = b9.childNodes[0].className;
+
+        if(b1Child == "x" && b5Child == "x" && b9Child == "x") {
+            // x venceu
+            console.log("x venceu");
+        } else if(b1Child == "o" && b5Child == "o" && b9Child == "o") {
+            // o venceu
+            console.log("o venceu");
+        }
+    }
+
+    // DIAGONAL - possibilidade 2
+    if(b3.childNodes.length > 0 && b5.childNodes.length > 0 && b7.childNodes.length > 0) {
+
+        let b3Child = b3.childNodes[0].className;
+        let b5Child = b5.childNodes[0].className;
+        let b7Child = b7.childNodes[0].className;
+
+        if(b3Child == "x" && b5Child == "x" && b7Child == "x") {
+            // x venceu
+            console.log("x venceu");
+        } else if(b3Child == "o" && b5Child == "o" && b7Child == "o") {
             // o venceu
             console.log("o venceu");
         }
